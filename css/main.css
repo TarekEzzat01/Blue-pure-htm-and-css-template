@@ -20,8 +20,19 @@ body {
 /* font family here =>> */ font-family: 'Lato', sans-serif;; /* 100 - 300 - 400 - 700 - 900 */
 }
 
+
+
 .containar {
 	margin:0 auto;
+}
+
+.btn{
+    font-weight: var(--weight-700);
+    background-color: #FF3946;
+    color: white;
+    text-transform: capitalize;
+    padding: 6px;
+    border: none;
 }
 
 /* small */
@@ -183,7 +194,7 @@ body {
     font-size: 16px;
 }
 
-.banner .text button {
+.banner .text .btn{
     font-weight: var(--weight-700);
     background-color: #FF3946;
     color: white;
@@ -255,11 +266,226 @@ body {
 /*start about*/
 
 .about {
-
+    padding: 0 30px;
+    margin-top: 50px;
 }
 
 .about .containar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about .text h1, h2 {
+    text-transform: capitalize;
+    font-weight: var(--weight-900);
+    color: var(--min-color);
+}
+
+
+.about .product {
+    width: 400px;
+    background-color: #f6f6f6;
+    margin-left: 10px;
+    text-align: center;
+    padding: 14px;
+}
+
+.about i {
+    color: var(--min-color);
+}
+.about .product p {
+    font-weight: var(--weight-300);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+    .about {
+        padding: 0 30px;
+        margin: 0;
+    }
+
+    .about .containar {
+        display: block;
+    }
+
+    .about .text {
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    .about .product {
+        width: auto;
+        background-color: #f6f6f6;
+        margin-bottom: 16px;
+        text-align: center;
+        padding: 15px;
+    }
+}
+/*end about */
+/*start our-company */ 
+
+.our-company {
+    padding: 0 30px;
+    margin-top: 100px;
+}
+
+.our-company .containar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.our-company .image {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.our-company .image img {
+    width: 80%;
+    height: 80%;
+}
+
+.our-company .text {
+    width: 45%;
+    padding: 10px;
+}
+
+.our-company .t-span {
+    color: red;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: var(--weight-900);
+}
+
+.our-company .text  p {
+    font-weight: var(--weight-300);
+    font-size: 16px;
+    line-height: 1.6;
+}
+@media (max-width: 767px) {
+    .our-company {
+        padding: 0 30px;
+        margin-top: 50px;
+    } 
+
+    .our-company .containar {
+        display: block;
+    }
+
+    .our-company .image {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .our-company .text {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .our-company .text h2 {
+        font-size: 25px;
+    }
+    
+}
+/*end our-company */
+
+/* start work */
+.work{
+    padding: 0 30px;
+    margin-top: 100px;
+}
+
+.work .containar h1 {
+    text-transform: capitalize;
+    font-weight: var(--weight-900);
+    color: var(--min-color);
+    margin-bottom: 50px;
+}
+
+.work .containar h4 {
+    text-align: center;
+    text-transform: capitalize;
+    color: red;
+    font-weight: var(--weight-900);
+}
+
+.work .containar .photo {
+    padding: 10px 30px;
+    text-align: center;
 
 }
 
-/*end about */
+.work .containar .photo .one {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+.work .containar .photo .one i {
+    color: var(--min-color);
+}
+
+
+.coding {
+    transform: rotate3d(0, 1, 0, 180deg);
+}
+
+.work .containar .photo img {
+    height: 275px;
+    margin-bottom: 25px;
+}
+
+
+@media (max-width: 767px) {
+
+    .work {
+        margin-top: 30px;
+    }
+
+    .work .containar {
+        text-align: center;
+    }
+
+    .work .containar h1 {
+         margin-bottom: 0;
+    }
+
+
+    .work .containar .photo .one {
+        display: block;
+    }
+
+    .work .containar .photo .one .start {
+        margin-top: 75px;
+    }
+
+    .work .containar .photo .one img {
+        margin-bottom: 50px;
+    }
+
+
+
+}
+
+@media (max-width: 992px) {
+    .work .containar .photo .one i {
+        display: none;
+    }
+}
+
+/* end work*/ 
+
+/* start blog */
+
+
+/* end blog*/
